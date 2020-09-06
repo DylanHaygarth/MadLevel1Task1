@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HigherLowerActivity">
+
+    <TextView
+        android:id="@+id/tvExplText"
+        android:layout_width="335dp"
+        android:layout_height="36dp"
+        android:text="@string/explain_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice1"
+        app:layout_constraintBottom_toTopOf="@+id/btnEqual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvExplText" />
+
+    <TextView
+        android:id="@+id/tvLastThrowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/lastthrow_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivDice" />
+
+    <TextView
+        android:id="@+id/tvLastThrowValue"
+        android:layout_width="26dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/lastthrow_value"
+        app:layout_constraintStart_toEndOf="@+id/tvLastThrowText"
+        app:layout_constraintTop_toBottomOf="@+id/ivDice" />
+
+    <Button
+        android:id="@+id/btnLower"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lower"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnEqual"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEqual"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/equals"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btmHigher"
+        app:layout_constraintStart_toEndOf="@+id/btnLower" />
+
+    <Button
+        android:id="@+id/btmHigher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/higher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnEqual"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
