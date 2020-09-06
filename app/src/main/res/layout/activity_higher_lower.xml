@@ -59,11 +59,11 @@
         android:layout_height="wrap_content"
         android:text="@string/equals"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btmHigher"
+        app:layout_constraintEnd_toStartOf="@+id/btnHigher"
         app:layout_constraintStart_toEndOf="@+id/btnLower" />
 
     <Button
-        android:id="@+id/btmHigher"
+        android:id="@+id/btnHigher"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/higher"

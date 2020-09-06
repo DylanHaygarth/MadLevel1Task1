@@ -2,8 +2,11 @@
     <string name="app_name">MADLevel1Task1</string>
     <string name="explain_text">Guess if the next throw is going to be lower, equal or higher</string>
     <string name="lastthrow_text">Last throw:</string>
-    <string name="lastthrow_value" />
+    <string name="lastthrow_value"></string>
     <string name="lower">lower</string>
     <string name="equals">equals</string>
     <string name="higher">higher</string>
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="dice">dice%d</string>
 </resources>
